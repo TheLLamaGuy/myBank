@@ -1,3 +1,8 @@
+:root {
+    --logo-size: 50px;
+    --user-icon-size: 50px;
+}
+
 * {
     margin: 0;
     color: white;
@@ -12,7 +17,7 @@
 
 header {
     position: relative;
-    height: 70px;
+    height: 100px;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -25,7 +30,7 @@ header::after {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 4px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
 }
 
@@ -34,20 +39,31 @@ header::after {
 }
 
 #logo-my {
-    font-size: 35px;
+    font-size: var(--logo-size);
     font-family: "Baloo 2", "poppins";
     font-weight: bolder;
     color: yellow;
 }
 
 #logo-Bank {
-    font-size: 35px;
+    font-size: var(--logo-size);
     font-family: 'poppins', 'Roboto', sans-serif;
     font-weight: 800;
     /* Use a lighter weight */
     color: transparent;
     -webkit-text-stroke: 1px white;
     /* Outline effect */
+}
+
+#user-icon {
+    background-color: wheat;
+    box-shadow: 5px white;
+    border-radius: 50%;
+}
+
+#user-icon, #user-icon img {
+    height: var(--user-icon-size);
+    width: var(--user-icon-size);
 }
 
 /* Home Page */
