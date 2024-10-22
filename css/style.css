@@ -46,7 +46,7 @@ header::after {
     font-weight: 800;
     /* Use a lighter weight */
     color: transparent;
-    -webkit-text-stroke: 0.1px white;
+    -webkit-text-stroke: 1px white;
     /* Outline effect */
 }
 
