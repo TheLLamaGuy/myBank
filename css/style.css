@@ -1,3 +1,13 @@
+:root {
+    /* size */
+    --logo-size: 50px;
+    --user-icon-size: 50px;
+    --header-height: 100px;
+    
+    /* colour */
+    --highlight-color: wheat;
+}
+
 * {
     margin: 0;
     color: white;
@@ -12,7 +22,7 @@
 
 header {
     position: relative;
-    height: 70px;
+    height: var(--header-height);
     width: 100vw;
     display: flex;
     align-items: center;
@@ -25,8 +35,9 @@ header::after {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+    height: 6px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), wheat, rgba(255, 255, 255, 0));
+    
 }
 
 #logo {
@@ -34,20 +45,52 @@ header::after {
 }
 
 #logo-my {
-    font-size: 35px;
+    font-size: var(--logo-size);
     font-family: "Baloo 2", "poppins";
     font-weight: bolder;
-    color: yellow;
+    color: gold;
 }
 
 #logo-Bank {
-    font-size: 35px;
+    font-size: var(--logo-size);
     font-family: 'poppins', 'Roboto', sans-serif;
     font-weight: 800;
     /* Use a lighter weight */
     color: transparent;
-    -webkit-text-stroke: 0.1px white;
+    -webkit-text-stroke: 1px white;
     /* Outline effect */
 }
+
+#user-icon {
+    background-color: wheat;
+    border-radius: 50%;
+    position: absolute;
+    left: 3%;
+    transition:  0.35s;
+}
+
+#user-icon:hover {
+    box-shadow: 0 0 10px wheat;
+    transform: translateY(-2.5px);
+    
+}
+
+#user-icon, #user-icon img {
+    height: var(--user-icon-size);
+    width: var(--user-icon-size);
+}
+
+#user-icon > a {
+    height: var(--user-icon-size);
+    height: var(--user-icon-size);
+}
+
+#content {
+    height: var(--header-height);
+    width: 100%;
+}
+
+/* Animation Code */
+
 
 /* Home Page */
