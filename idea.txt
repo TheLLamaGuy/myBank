@@ -1,0 +1,55 @@
+*All of information like username/password, preferences, transactions and etc is stored locally on the users device.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+The following describes the process when the user is visiting the website for the first time. This information is stored locally for later use.
+
+The user first goes to myBank home page,
+from there they can click on signin/signup button,
+they get redirected to signin/signup page, there will be a button of either selecting signin or sign up. They will not be able to select sign in as signedUp is set to False.
+since, the user does not have a account setup yet, they click the sign up option and enter desired username and a login password.
+after signing up they get redirected to the preferences page, this is where they decide their desired preferences.
+They will not be able to use the other hyperlinks to navigate during this process as preferencesSet is set to False. If True they will be redirected to the bank accounts page.
+
+information used/to be stored:
+    - signedUp (boolean)
+    - preferencesSet (boolean)
+    - username (string)
+    - password (string)
+
+# one variable can be used instead of signedUp and preferencesSet to get the work done
+
+The following describes the process when the user is has already visited the website and set their preferences.
+
+The user goes to myBank home page.
+They click the signin/signup button.
+They get redirected to the signin/signup page. The user will not be able to click on signup as signedUp is set to True.
+The user is then redirected to bank accounts page.
+
+information used/to be stored:
+    - signedUp (boolean)
+    - preferencesSet (boolean)
+    - username (string)
+    - password (string)
+------------------------------------------------------------------------------------------------------------------------------
+
+myBank home page:
+    This page will contain catchy slogans or sentences.
+    Maybe some graphics as well.
+    There can be a section which tells information about the bank:
+        for example loans with low interest(use css breakpoints and animations)
+        or x amount of Annual interest return, (if money is kept in savings account)
+
+myBank signin/signup page:
+    self explanotry, will be used to signin/signup.
+    Options to select sign in or sign up.
+    if sign in is selected, when the user proceeds further, they will be redirected to the bank accounts page.
+    if sign up is selected, they will be redirected to the preferences page. when they have set their preferences, they will be redirected to the bank accounts page.
+
+myBank preferences/profile page:
+    all of this is stored locally
+    The user can change their username, password and other preferences.
+    this page is also going to have an option to split their account into 4 accounts(needs, wants, save and invest). After selecting this, they will be able to customise
+    I will add other options later
+
+I will add other things later
