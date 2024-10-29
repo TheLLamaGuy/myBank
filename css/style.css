@@ -6,21 +6,24 @@
     
     /* colour */
     --highlight-color: wheat;
+    --main-background-color: rgb(43, 43, 43);
 }
 
 * {
     margin: 0;
-    color: white;
-    
+    color: rgb(43, 43, 43);
 }
 
 #main-body {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(43, 43, 43);
+    background-color: white;
+    display: flex;
+    flex-flow: column;
 }
 
 header {
+    background-color: var(--main-background-color);
     position: relative;
     height: var(--header-height);
     width: 100vw;
@@ -48,7 +51,7 @@ header::after {
     font-size: var(--logo-size);
     font-family: "Baloo 2", "poppins";
     font-weight: bolder;
-    color: gold;
+    color: wheat;
 }
 
 #logo-Bank {
@@ -86,8 +89,20 @@ header::after {
 }
 
 #content {
-    height: var(--header-height);
-    width: 100%;
+    background-color: var(--main-background-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#content-card {
+    background-color: rgb(54, 54, 54);
+    opacity: 0.5;
+    border-radius: 2rem;
+    border: 2px solid wheat;
+    height: 20rem;
+    width: 90rem;;
+    border-radius: 2rem;
 }
 
 /* Animation Code */
